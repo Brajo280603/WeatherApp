@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      .css-button-retro--black {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #000;
+  background: transparent;
+}
+.css-button-retro--black:hover:after {
+  top: 0;
+  left: 0;
+}
+.css-button-retro--black:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #343a40;
+}
+    </style>
+  </head>
+  <body>
+    
+    <div style="margin: 1rem;">
+      <input type="text" id="cityName">
+      <button class="css-button-retro--black" id="searchBtn">Search</button>
+    </div>
+    <p id="result"></p>
+
+    <script src="bundle.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

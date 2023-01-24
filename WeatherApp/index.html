@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>WeatherApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .css-button-retro--black {
   min-width: 130px;
@@ -36,12 +37,26 @@
   transition: 0.2s;
   background-color: #343a40;
 }
+
+.search{
+  border:#343a40 1px solid;
+
+}
+.search:focus,.search:focus-visible{
+  border: 2px solid #343a40;
+  border-radius: 0px;
+  box-shadow: none;
+  outline: none;
+}
+
     </style>
   </head>
   <body>
+
+
     
-    <div style="margin: 1rem;">
-      <input type="text" id="cityName">
+    <div class="" style="margin: 1rem;">
+      <input class="search" type="text" id="cityName" >
       <button class="css-button-retro--black" id="searchBtn">Search</button>
     </div>
     <p id="result"></p>
